@@ -134,30 +134,30 @@ local underline = useunderline(UNDERLINE)
 return lush(function(injected_functions)
       local sym = injected_functions.sym
       return {
-          CursorLine   { bg = VaporLush.Background                                                            },      
-          Directory    { bg = VaporLush.Background,       fg = VaporLush.Quintary.shade1,     gui = underline },      
+          CursorLine   { bg = "none"                                                            },      
+          Directory    { bg = "none",       fg = VaporLush.Quintary.shade1,     gui = underline },      
           DiffAdd      { bg = VaporLush.Quintary.shade2,      fg = VaporLush.Secondary.shade0                     },      -- Diff mode: Added line |diff.txt|
           DiffChange   { bg = VaporLush.Quintary.shade3,      fg = VaporLush.Secondary.shade2                     },      -- Diff mode: Changed line |diff.txt|
           DiffDelete   { bg = VaporLush.Primary.shade1,       fg = VaporLush.Quartenary.shade2                    },      -- Diff mode: Deleted line |diff.txt|
           DiffText     { bg = VaporLush.Quartenary.shade2,    fg = VaporLush.Tertiary.shade3,     gui=italic      },      
-          EndOfBuffer  {  bg = VaporLush.Background,      fg = VaporLush.Secondary.shade0,    gui=italic      },      
-          VertSplit    {  bg = VaporLush.Background,      fg = VaporLush.Secondary.shade0                     },      -- Column separating vertically split windows
-          Folded       { bg = VaporLush.Background,       fg = VaporLush.Secondary.shade2                     },      -- Line used for closed folds
+          EndOfBuffer  {  bg = "none",      fg = VaporLush.Secondary.shade0,    gui=italic      },      
+          VertSplit    {  bg = "none",      fg = VaporLush.Secondary.shade0                     },      -- Column separating vertically split windows
+          Folded       { bg = "none",       fg = VaporLush.Secondary.shade2                     },      -- Line used for closed folds
           FoldColumn   { bg = Folded.bg,                      fg = Folded.fg                                      },      -- 'foldcolumn'
           SignColumn   { bg = Folded.bg,                      fg = VaporLush.Quartenary.shade2                    },      -- Column where |signs| are displayed
           IncSearch    { bg = VaporLush.Quartenary.shade2,    fg = VaporLush.Tertiary.shade3                      },      
           Substitute   { bg = VaporLush.Quartenary.shade1,    fg = VaporLush.Tertiary.shade2                      },      
-          LineNr       { bg = VaporLush.Background,       fg = VaporLush.Secondary.shade3                     },      
+          LineNr       { bg = "none",       fg = VaporLush.Secondary.shade3                     },      
           CursorLineNr {  bg = VaporLush.Primary.shade1,      fg = VaporLush.Quintary.shade1                      },      
-          Normal       { bg = VaporLush.Background,       fg = VaporLush.Secondary.shade3                     },      -- Normal text
+          Normal       { bg = "none",       fg = VaporLush.Secondary.shade3                     },      -- Normal text
           Pmenu        { SignColumn                                                                                   },      -- Popup menu: Normal item.
-          PmenuSel     { bg = VaporLush.Background,       fg = VaporLush.Tertiary.shade3                      },      -- Popup menu: Selected item.
+          PmenuSel     { bg = "none",       fg = VaporLush.Tertiary.shade3                      },      -- Popup menu: Selected item.
           PmenuSbar    { bg = VaporLush.Primary.shade3,       fg = VaporLush.Quintary.shade0                      },      -- Popup menu: Scrollbar.
           PmenuThumb   { bg = VaporLush.Primary.shade3,       fg = VaporLush.Quintary.shade1                      },      -- Popup menu: Thumb of the scrollbar.
           Question     { bg = VaporLush.Secondary.shade0,     fg = VaporLush.Secondary.shade2                     },      -- |hit-enter| prompt and yes/no questions
           Search       { bg = VaporLush.Tertiary.shade3,      fg = VaporLush.Background                       }, 
           Visual       { bg = VaporLush.Secondary.shade0,     fg = VaporLush.Tertiary.shade3                      },      -- Visual mode selection
-          Comment      { bg = VaporLush.Background,       fg = VaporLush.Secondary.shade3,     gui=italic      },      -- Any comment
+          Comment      { bg = "none",       fg = VaporLush.Secondary.shade3,     gui=italic      },      -- Any comment
           Constant     { bg = Normal.bg,                      fg = VaporLush.Quartenary.shade2                      },      -- (*) Any constant
           String       { bg = Normal.bg,                      fg = VaporLush.Quintary.shade3                      },      --   A string constant: "this is a string"
           Character    { String                                                                                   },      --   A character constant: 'c', '\n'
@@ -166,10 +166,10 @@ return lush(function(injected_functions)
           Float        { Number                                                                                   },      --   A floating point constant: 2.3e10
           Identifier   { bg = Nomal.bg,                       fg=VaporLush.Secondary.shade2          },      -- (*) Any variable name
           Function     { bg = Nomal.bg,                       fg=VaporLush.Tertiary.shade2,      gui="italic, bold"      },      
-          Statement      { bg = VaporLush.Background,     fg = VaporLush.Primary.shade1,      gui=""          },      -- (*) Any statement
+          Statement      { bg = "none",     fg = VaporLush.Primary.shade1,      gui=""          },      -- (*) Any statement
           Conditional    { Statement                                                                              },      --   if, then, else, endif, switch, etc.
           Repeat         { Statement,                                                             gui=italic      },      --   for, do, while, etc.
-          Label          { bg=VaporLush.Background,       fg=VaporLush.Primary.shade2      },      --   case, default, etc.
+          Label          { bg="none",       fg=VaporLush.Primary.shade2      },      --   case, default, etc.
           Operator       { Label                                                                                  },      --   "sizeof", "+", "*", etc.
           Keyword        { Label                                                                                  },      --   any other keyword
           Exception      { Label                                                                                 },      --   try, catch, throw
