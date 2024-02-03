@@ -25,7 +25,7 @@
 local lush = require('lush')
 local hsl = lush.hsl
 
-local TRANSPARENT = false
+local TRANSPARENT = true
 
 local function isTransparent()
     if TRANSPARENT then
