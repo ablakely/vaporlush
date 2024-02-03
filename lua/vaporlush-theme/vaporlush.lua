@@ -15,7 +15,6 @@
 --                               I8                                                                                 
 --                               I8
 
-
 -- This is a vaporwave colorscheme that is built with lush neovim plugin
 -- 
 -- Adam Kalinowski
@@ -101,7 +100,7 @@ local function lightMode(activate)
                 shade0 = hsl(230, 100, 73),
                 shade1 = hsl(230, 100, 63),
                 shade2 = hsl(61, 65, 50),
-                shade3 = hsl(322, 100, 35),
+                shade3 = hsl(329, 100, 45),
             },
             Tertiary = {
                 shade0 = hsl(300, 100, 85),
