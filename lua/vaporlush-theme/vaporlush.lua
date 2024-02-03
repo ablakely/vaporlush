@@ -69,7 +69,7 @@ local VaporLush = {
 
 local UNDERLINE      = true
 local ITALIC         = true 
-local LIGHTTHEME     = false
+local LIGHTTHEME     = true
 
 local function useunderline(activate)
     local res = ""
