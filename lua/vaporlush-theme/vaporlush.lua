@@ -100,8 +100,8 @@ local function lightMode(activate)
             Secondary = {
                 shade0 = hsl(230, 100, 73),
                 shade1 = hsl(230, 100, 63),
-                shade2 = hsl(230, 100, 43),
-                shade3 = hsl(230, 100, 33),
+                shade2 = hsl(180, 100, 43),
+                shade3 = hsl(180, 100, 33),
             },
             Tertiary = {
                 shade0 = hsl(300, 100, 85),
