@@ -113,7 +113,7 @@ local function lightMode(activate)
                 shade0 = hsl(180, 100, 80),
                 shade1 = hsl(180, 100, 70),
                 shade2 = hsl(180, 100, 40),
-                shade3 = hsl(180, 100, 25),
+                shade3 = hsl(60, 100, 32),
             },
             Quintary = {
                 shade0 = hsl(275, 100, 85),
